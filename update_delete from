@@ -1,0 +1,25 @@
+UPDATE author
+SET first_name = 'Frans'
+WHERE id = 2;
+
+UPDATE author 
+SET birthday = null
+WHERE first_name = 'Ana';
+
+UPDATE author
+SET email = 'abcde@asdf.com'
+WHERE last_name = 'MacMickan';
+
+UPDATE author 
+SET email = CONCAT(email, '.tr')
+WHERE email LIKE 'a%';
+
+UPDATE author
+SET birthday = null;
+
+DELETE ÖRNEKLERİ:
+DELETE FROM author
+WHERE id = 5;
+
+DELETE FROM author
+WHERE email = 'orwell@or.com' AND last_name = 'Orwell';
